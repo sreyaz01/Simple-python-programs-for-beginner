@@ -13,5 +13,5 @@ print(df.tail(10)) #to show last 10 rows from csv file
 engine = sqlalchemy.create_engine('postgresql+psycopg2://postgres:postgres@127.0.0.1:5432/elliot_raju') #creating a conncection with database server
 
 df.to_sql('weather_data', con=engine, if_exists = 'append') #pushing file on server 
-#syntax 'df.ti_sql('file_name', con=pipeline_name, if_exists='append') if _exists= append will append rows and columns if file is already in database
+#syntax 'df.to_sql('file_name', con=pipeline_name, if_exists='append') if _exists= append will append rows and columns if file is already in database
 
