@@ -20,7 +20,7 @@ i = 0
 
 while i < 5:
     copy()
-    i += i
+    i += 1
    
 else:
     print('you have exceded your attempts')
