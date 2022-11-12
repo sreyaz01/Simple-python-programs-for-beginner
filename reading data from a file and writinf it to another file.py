@@ -14,8 +14,13 @@ def copy():
         f.close()
     except FileNotFoundError:
         print('file to copy data from is not found please enter valid file name')
-        copy()
+      
 
-    
-    
-copy()
+i = 0
+
+while i < 5:
+    copy()
+    i += i
+   
+else:
+    print('you have exceded your attempts')
